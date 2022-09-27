@@ -1,5 +1,8 @@
 name: NightlyTrigger_WorkFlow
 on: 
+  push:
+    branches:
+      - master
   schedule:
   - cron: '*/5 * * * *'
 
