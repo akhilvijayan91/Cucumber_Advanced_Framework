@@ -34,5 +34,6 @@ public class LoginVerification extends driverInstance {
     public void theUserShouldLoginSucessfullyToOrangeHRMApplication() {
         Assertions.assertThat(getTitle()).containsIgnoringCase("viewEmployeeList");
         quitDriver();
+
     }
 }

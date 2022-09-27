@@ -12,14 +12,11 @@ import java.io.IOException;
 public class loginPage
 {
     //private static final Logger log = LogManager.getLogger(loginPage.class.getName());
-
-
-
     public void enterUserName(String username) throws IOException, InterruptedException {
         Thread.sleep(3000);
         Driver.getDriver().findElement(By.xpath(utilityFecthProperty.fetchLocaterValue("loginpage_username_fld"))).sendKeys(username);
         //extentReportUtility.loger.log(Status.INFO,"Succesfully entered Username: "+username);
-        ExtentCucumberAdapter.addTestStepLog("Sucessfully entered username: "+username);
+        ExtentCucumberAdapter.addTestStepLog("Sucessfully entered username: " + username);
     }
     public void enterpassword(String password) throws IOException
     {
