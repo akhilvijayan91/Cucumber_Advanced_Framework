@@ -2,7 +2,7 @@ name: NightlyTrigger_WorkFlow
 on: 
   
   schedule:
-  - cron: '55 8 * * *'
+  - cron: '0 10 * * *'
 
 jobs:
     build:
